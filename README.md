@@ -27,6 +27,10 @@ Extract the text from the PDF, and put it in reading order. The multi-column lay
 
 ## Deliverables:
 
-A ptyhon command line executable, that accepts a path to the PDF as an argument, and generates a JSON file that represents the document but allowing the structure to be recovered as per the objective outline above.
+A github repository (forked from this template), containing source code for a python command line executable. The command line should accept a path argument to the PDF file, and generate as output a JSON file that represents the document as per the objective outlined above. The code may be implemented in the `extract` folder in the template repository. Any tests you write may be placed in the `tests` folder. The command line executable should be named `extract.py` and should be runnable roughly as follows:
 
-You may also generate a Jupyter notebook that demonstrates your approach to the problem. We will be evaluating your approach, so please include any notes that you think will help us understand your thought process. If you use a service like ChatGPT, please include the API calls in your code, i.e., the workflow should not consist of manual steps that wouldn't scale to a large number of documents.
+```bash
+python extract.py --path <path_to_pdf_file>
+```
+
+As part of this effort, it would be helpful to document your approach to solving this problem. To this end, you may generate one or more Jupyter notebooks that demonstrates your thinking and code. Please include any notes that you think will help us understand your thought process. If you use a service such as  ChatGPT in your workflow, please include the API calls in your code -- the workflow itself should not contain manual steps that wouldn't scale to a potentially large number of documents.
